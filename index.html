@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shridhara Bhat - Tech Enthusiast, Problem Solver, Developer">
     <title>Shridhara Bhat | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
@@ -22,30 +23,30 @@
     </nav>
 
     <!-- Hero Section with animated shapes and 3D Effects -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
         <div class="container">
             <div class="name-wrapper">
-                <h1><span>S</span>HRIDHARA</h1>
+                <h1 id="hero-title"><span>S</span>HRIDHARA</h1>
                 <h1><span>B</span>HAT</h1>
             </div>
             <div class="title-wrapper">
                 <p class="title">Tech Enthusiast  •  Problem Solver  •  Developer</p>
                 <p class="contact-info">
                     +91 8867023561 | <a href="mailto:shridhara.ci22@bmsce.ac.in">shridhara.ci22@bmsce.ac.in</a> | 
-                    <a href="https://www.linkedin.com/in/shridharabhat/" target="_blank">LinkedIn</a> | 
-                    <a href="https://github.com/shridhara-bhat" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/shridharabhat/" target="_blank" rel="noopener">LinkedIn</a> | 
+                    <a href="https://github.com/shridhara-bhat" target="_blank" rel="noopener">GitHub</a>
                 </p>
             </div>
         </div>
         <div class="floating-shapes">
-            <div class="circle"></div>
-            <div class="triangle"></div>
-            <div class="square"></div>
+            <div class="circle" aria-hidden="true"></div>
+            <div class="triangle" aria-hidden="true"></div>
+            <div class="square" aria-hidden="true"></div>
         </div>
     </section>
 
     <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
+    <div class="scroll-indicator" aria-hidden="true">
         <span>&#x25BC;</span>
     </div>
 
@@ -94,17 +95,15 @@
     </section>
 
     <!-- Certifications Section -->
-    <section class="projects" id="certifications">
+    <section class="certifications" id="certifications">
         <div class="container">
             <h2>Certifications</h2>
-            <div class ="project-item">
             <ul>
                 <li>Level 3 GenAI: Prompt Engineering</li>
                 <li>Google Cloud Computing Foundations Course</li>
                 <li>JavaScript Foundations Course</li>
                 <li>Zerodha Varsity - Stock Market Basics</li>
             </ul>
-            </div>
         </div>
     </section>
 
@@ -172,9 +171,9 @@
         <div class="container">
             <h2>Contact Me</h2>
             <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
+                <input type="text" placeholder="Name" required aria-label="Name">
+                <input type="email" placeholder="Email" required aria-label="Email">
+                <textarea placeholder="Message" required aria-label="Message"></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
